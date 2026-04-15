@@ -8,6 +8,8 @@
 html {
     font-family: "Source Sans 3", sans-serif;
     letter-spacing: -0.009rem;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -18,9 +20,61 @@ h2{
     font-size: 1.6rem;
     font-weight: 400;
 }
-h3{
-
+h3, li a{
+    font-size: 1.4rem;
 }
 h4{
+     font-size: 1.2rem;
+}
 
+/*  <header>
+      <nav>
+        <div class="logo-container">
+            <a>
+              <img 
+                class="logo" 
+                alt="logo" 
+                src="src/images/svgviewer-png-output.png" 
+                width="100">
+              <h3>My learning journal</h3>
+            </a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+        </ul>
+      </nav>
+    </header> */
+
+/*---------------------------header----------------------------------------*/
+body,header{
+    margin: 0;
+    padding: 0;
+ border: 1px solid;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+a{
+ border: 1px solid blue;
+}
+.logo-container {
+
+    border: 1px solid red;
+}
+.logo{
+    width: 40px;
+    border: 1px solid red;
+}
+ul{
+ border: 1px solid green;
+}
+li{
+ border: 1px solid orangered
+}
+li a {
+    border: 1px solid purple;
 }
