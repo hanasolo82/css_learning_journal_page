@@ -169,3 +169,37 @@ li a {
     grid-area: six;
 }
 }
+/*---------------viewbutton--------------------*/
+.more-blog-container {
+    display: flex;
+    justify-content: center;
+}
+.more-blog-btn {
+    font-family: "Source Sans 3", sans-serif;
+    background-color: white;
+    font-size: 1.6rem;
+    line-height: 0.9em;
+    padding: 1rem;
+    border: 0.2rem solid transparent;
+    border-radius: 0.5rem;
+    margin: 1rem auto 4.3rem auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.more-blog-btn:hover, .more-blog-btn:focus {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #0E0E0E;
+    transition-duration: 0.3s;
+   
+    
+}
+footer {
+    background-color: #0E0E0E;
+    color: white;
+    text-align: center;
+    padding: 3.7rem;
+}
+.copyright {
+    font-weight: 300;
+}
