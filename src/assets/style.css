@@ -11,6 +11,10 @@ html {
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, h4, nav, p, img, a, ul, li, section, main{
+   margin: 0;
+   padding: 0; 
+}
 
 h1{
     font-size: 4.2rem;
@@ -26,55 +30,97 @@ h3, li a{
 h4{
      font-size: 1.2rem;
 }
-
-/*  <header>
-      <nav>
-        <div class="logo-container">
-            <a>
-              <img 
-                class="logo" 
-                alt="logo" 
-                src="src/images/svgviewer-png-output.png" 
-                width="100">
-              <h3>My learning journal</h3>
-            </a>
-        </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-        </ul>
-      </nav>
-    </header> */
-
 /*---------------------------header----------------------------------------*/
 body,header{
     margin: 0;
     padding: 0;
- border: 1px solid;
-
 }
+
 nav{
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
+    align-items: center;
+    min-width: 35rem;
+    height: 5.9rem;
 }
-a{
- border: 1px solid blue;
+a {
+    display: flex;
+    align-items: center;
 }
 .logo-container {
-
-    border: 1px solid red;
+    margin: 0 0 0 2rem; /* margin for the rest of articles down*/
+    padding: 0;
+}
+.logo-container h3{
+    margin: 0 0 0 0.4rem;
 }
 .logo{
+    margin: 0;
     width: 40px;
-    border: 1px solid red;
+    
 }
 ul{
- border: 1px solid green;
+    display: flex;
+    list-style: none;
+    
 }
 li{
- border: 1px solid orangered
+    padding-right: 2rem;
 }
 li a {
-    border: 1px solid purple;
+    text-transform:uppercase;
+    color:#0E0E0E;
+    text-decoration: none;
+    font-weight: 600;
+}
+/*  <section class="blog-title">
+            <div class="blog-title-content">
+                <h3 class="blog-date">JULI 23, 2022</h3>
+                <div class="blog-text">
+                  <h1>My new journey as a bootcamp student.</h1>
+                <h2>
+                  After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
+                </h2>
+                </div> 
+              </div>
+            <img class="blog-title-img" src="src/images/watch_on_the_floor.avif" alt="a big watch painted on the floor and a man with a laptop in the middle" width="400"> 
+      </section>*/
+/*--------main--------*/
+
+/*-----------title blog---------------*/
+.blog-title {
+    position: relative;
+    
+    
+}
+.blog-title-content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    max-width: 60%;
+    left: 2rem; 
+    bottom: 2rem;
+    
+
+}
+.blog-date, .blog-text h2 {
+    font-weight: 300;
+}
+.blog-text {
+    margin-top: 1rem; 
+    line-height: 4rem;
+    
+}
+.blog-text h2{
+    margin-top: 1rem;
+    line-height: 2rem;
+    max-width: 73rem;
+    
+}
+.blog-title-img {
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+    
+
 }
