@@ -57,12 +57,10 @@ a {
 .logo{
     margin: 0;
     width: 40px;
-    
 }
 ul{
     display: flex;
     list-style: none;
-    
 }
 li{
     padding-right: 2rem;
@@ -73,35 +71,19 @@ li a {
     text-decoration: none;
     font-weight: 600;
 }
-/*  <section class="blog-title">
-            <div class="blog-title-content">
-                <h3 class="blog-date">JULI 23, 2022</h3>
-                <div class="blog-text">
-                  <h1>My new journey as a bootcamp student.</h1>
-                <h2>
-                  After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.
-                </h2>
-                </div> 
-              </div>
-            <img class="blog-title-img" src="src/images/watch_on_the_floor.avif" alt="a big watch painted on the floor and a man with a laptop in the middle" width="400"> 
-      </section>*/
-/*--------main--------*/
+/*------------------------------main--------*/
 
 /*-----------title blog---------------*/
 .blog-title {
     position: relative;
-    
-    
 }
 .blog-title-content {
     position: absolute;
     z-index: 1;
     color: white;
-    max-width: 60%;
+    max-width: 90%;
     left: 2rem; 
     bottom: 2rem;
-    
-
 }
 .blog-date, .blog-text h2 {
     font-weight: 300;
@@ -109,18 +91,81 @@ li a {
 .blog-text {
     margin-top: 1rem; 
     line-height: 4rem;
-    
 }
 .blog-text h2{
     margin-top: 1rem;
     line-height: 2rem;
     max-width: 73rem;
-    
 }
 .blog-title-img {
     width: 100%;
     filter: brightness(50%);
+    display: block;
     object-fit: cover;
+}
+/*----------------old blogs grid-----------------------------*/
+.blog-section-container {
     
+    display: grid;
+    grid-template-columns:  1em 1fr 1em;
+    grid-template-areas: 
+    "... ... ..."
+    "... one ..."
+    "... two ..." 
+    "... thr ..."
+    "... ... ...";
+    gap: 2rem 0;
+}
+@media (min-width: 600px) {
 
+    .blog-section-container {
+        display: grid;
+        grid-template-columns: 1em 1fr 1fr 1fr 1em;
+        grid-template-areas: 
+        "... ... ... ... ..."
+        "... one two thr ..."
+        "... fou fiv six ..."
+        "... ... ... ... ..."
+        ;
+        gap: 2rem 1rem ;
+    }
+}
+.blog-box {
+    max-width: 37.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.blog-img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: thr;
+}
+.four, .five, .six {
+    display: none;
+}
+@media(min-width: 600px) {
+.four, .five, .six {
+    display: flex;
+}
+.four {
+   grid-area: fou;
+}
+.five { 
+    grid-area: fiv;
+}
+.six { 
+    grid-area: six;
+}
 }
